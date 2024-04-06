@@ -1,20 +1,28 @@
 import { Button } from 'flowbite-react';
+import { Fade, Slide } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <div>
-    <div className="container mx-auto px-6 py-20 flex items-center justify-between">     
+      <Fade>
+      <div className="container mx-auto px-6 py-12 flex items-center justify-between">     
       <div className="w-1/2">
-        <h1 className="text-5xl font-bold text-[#18217A]">
+        <Slide>
+        <h1 className="text-5xl font-bold text-[#18217A] font-serif">
           Random Video Calling
         </h1>
+        </Slide>
+        
+        <Fade>
         <p className="mt-6 text-[2.5rem] font-thin text-[#18217A]">
           Connect with strangers and make new friends from around the world.
         </p>
+        </Fade>
+        
         <div className="mt-8">
             <Link to="/call">
-            <Button size="xl" outline color="blue" pill onClick={() => {}}>
+            <Button className="shadow-lg" size="xl" outline color="blue" pill onClick={() => {}}>
             Start a Call
           </Button>
             </Link>
@@ -29,6 +37,9 @@ const Hero = () => {
         />
       </div>
     </div>
+
+      </Fade>
+    
   </div>
 );
 }

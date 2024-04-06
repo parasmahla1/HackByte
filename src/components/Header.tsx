@@ -6,7 +6,7 @@ const Header = () => {
     <Navbar fluid rounded>
       <Navbar.Brand href="">
         <img src="/logo.png" className="ml-8 mr-3 h-8 sm:h-9" alt="Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Anonimo</span>
+        <span className="self-center whitespace-nowrap text-[2rem] font-semibold font-serif dark:text-white">Anonimo</span>
       </Navbar.Brand>
       <div className="flex md:order-2">
         <Dropdown
@@ -30,10 +30,10 @@ const Header = () => {
       </div>
       <Navbar.Collapse>
         <Navbar.Link href="#" active>Home</Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
+        <Navbar.Link href="#" className="text-lg">About</Navbar.Link>
+        <Navbar.Link href="#" className="text-lg">Services</Navbar.Link>
+        <Navbar.Link href="#" className="text-lg">Pricing</Navbar.Link>
+        <Navbar.Link href="#" className="text-lg">Contact</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   )

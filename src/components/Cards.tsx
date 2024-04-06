@@ -1,15 +1,16 @@
 import { Card } from "flowbite-react";
+import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
 const cardData = [
     {
       title: 'Noteworthy technology acquisitions 2021',
       content: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
-      imageSrc: '/pic.png',
+      imageSrc: '/main1.jpeg',
     },
     {
-      title: 'Another Title',
-      content: 'Some other content.',
+      title: 'Noteworthy technology acquisitions 2021',
+      content: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
       imageSrc: '/pic.png',
     },
     {
@@ -22,7 +23,8 @@ const cardData = [
 
 const Cards = () => {
   return (
-    <div className="flex">
+    <Fade>
+       <div className="flex">
       {cardData.map((card, index) => (
         <Card
           key={index}
@@ -38,6 +40,7 @@ const Cards = () => {
         </Card>
       ))}
     </div>
+    </Fade>   
   );
 }
 export default Cards
