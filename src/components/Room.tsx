@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Socket, io } from "socket.io-client";
 import Header from "./Header";
+import { Button } from "flowbite-react";
 
 const URL = "http://localhost:3000";
 
@@ -208,6 +209,9 @@ export const Room = ({
         {lobby ? "Waiting to connect you to someone" : null}
         <video autoPlay width={500} height={500} ref={remoteVideoRef} className="rounded-3xl" />
         </div>
+        <Button className="mt-16 ml-26" color="failure" onClick={() => {
+            location.reload()
+        }}>End Call</Button>
     </div>
 }
 
