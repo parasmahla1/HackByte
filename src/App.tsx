@@ -5,7 +5,7 @@ import Call from './pages/Call'
 
 const App = () => {
   return (
-    <div>
+    <>
       
       <BrowserRouter>
         <Routes>
@@ -16,7 +16,7 @@ const App = () => {
       {/* <Header />
       <IndexFront /> */}
            
-    </div>
+    </>
   )
 }
 
