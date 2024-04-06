@@ -25,33 +25,19 @@ To get started with Anonimo, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/anonimo.git
+   git clone https://github.com/ravjot07/HackByte.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd anonimo
+   cd HackByte
    ```
 
-3. Install dependencies for both the frontend and backend:
-
-   ```
-   cd client
-   npm install
-   cd ../server
-   npm install
-   ```
 
 4. Run the frontend and backend servers:
 
    ```
-   cd client
-   npm start
-   ```
-
-   ```
-   cd ../server
    npm start
    ```
 
