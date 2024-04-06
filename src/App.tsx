@@ -11,6 +11,9 @@ const App = () => {
         <Routes>
         <Route path="/" element={<IndexFront />} />
         <Route path="/call" element={<Call />} />
+        <Route path="/about" element={<Call />} />
+        <Route path="/call" element={<Call />} />
+        <Route path="/call" element={<Call />} />
         </Routes>
       </BrowserRouter>
       {/* <Header />

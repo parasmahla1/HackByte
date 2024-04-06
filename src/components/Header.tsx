@@ -1,42 +1,20 @@
-
-import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Navbar fluid rounded>
-      <Navbar.Brand href="">
-        <img src="/logo.png" className="ml-8 mr-3 h-8 sm:h-9" alt="Logo" />
-        <span className="self-center whitespace-nowrap text-[2rem] font-semibold font-serif dark:text-white">Anonimo</span>
-      </Navbar.Brand>
-      <div className="flex md:order-2">
-        <Dropdown
-          arrowIcon={false}
-          inline
-          label={
-            <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded />
-          }
-        >
-          <Dropdown.Header>
-            <span className="block text-sm">Bonnie Green</span>
-            <span className="block truncate text-sm font-medium">name@flowbite.com</span>
-          </Dropdown.Header>
-          <Dropdown.Item>Dashboard</Dropdown.Item>
-          <Dropdown.Item>Settings</Dropdown.Item>
-          <Dropdown.Item>Earnings</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item>Sign out</Dropdown.Item>
-        </Dropdown>
-        <Navbar.Toggle />
-      </div>
-      <Navbar.Collapse>
-        <Navbar.Link href="#" active>Home</Navbar.Link>
-        <Navbar.Link href="#" className="text-lg">About</Navbar.Link>
-        <Navbar.Link href="#" className="text-lg">Services</Navbar.Link>
-        <Navbar.Link href="#" className="text-lg">Pricing</Navbar.Link>
-        <Navbar.Link href="#" className="text-lg">Contact</Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
-  )
-}
+    <nav className="text-black p-4 flex justify-between items-center">
+    <div className="flex items-center ml-24">
+      <img src="/logo.png" alt="Logo" className="h-14 mr-2" />
+      <span className="font-semibold text-3xl font-serif">Anonimo</span>
+    </div>
+    <div className="flex space-x-6 mr-24">
+      <Link to="/about" className="hover:text-gray-300 text-lg">About Us</Link>
+      <Link to="/contact" className="hover:text-gray-300 text-lg">Contact Us</Link>
+      <Link to="/pricing" className="hover:text-gray-300 text-lg">Pricing</Link>
+    </div>
+  </nav>
+);
+};
 
-export default Header
+
+export default Header;
