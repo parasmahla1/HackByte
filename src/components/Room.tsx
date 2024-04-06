@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { Socket, io } from "socket.io-client";
 import Header from "./Header";
 import { Button } from "flowbite-react";
+import Foot from "./Foot";
 
 const URL = "http://localhost:3000";
 
@@ -209,9 +210,10 @@ export const Room = ({
         {lobby ? "Waiting to connect you to someone" : null}
         <video autoPlay width={500} height={500} ref={remoteVideoRef} className="rounded-3xl" />
         </div>
-        <Button className="mt-16 ml-26" color="failure" onClick={() => {
-            location.reload()
-        }}>End Call</Button>
+        <Button className="mt-12 ml-auto mr-12" color="failure" onClick={() => {
+    location.reload()
+}}>End Call</Button>
+    <Foot/>
     </div>
 }
 
