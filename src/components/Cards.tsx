@@ -24,7 +24,7 @@ const cardData = [
 const Cards = () => {
   return (
     <Fade>
-       <div className="flex">
+       <div className="flex" >
       {cardData.map((card, index) => (
         <Card
           key={index}
