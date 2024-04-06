@@ -1,6 +1,6 @@
 import { Fade, Slide } from "react-awesome-reveal";
 import Header from "../components/Header";
-
+import Foot from "../components/Foot";
 const About = () => {
     return (
         <div> 
@@ -26,7 +26,9 @@ const About = () => {
                 User-Friendly Interface: Anonimo features an intuitive interface that makes it easy for users to navigate the platform and initiate video calls effortlessly. Whether accessing Anonimo via web browsers or mobile devices, users can enjoy a seamless experience every time.
                 <br />
             </div>
-        </div></div>
+        </div>
+        <Foot />
+        </div>
     );
 };
 
