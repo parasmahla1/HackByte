@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Socket, io } from "socket.io-client";
+import Header from "./Header";
 
 const URL = "http://localhost:3000";
 
@@ -200,9 +201,13 @@ export const Room = ({
     }, [localVideoRef])
 
     return <div >
-        <video autoPlay width={400} height={400} ref={localVideoRef} />
+        <Header />
+        <div className="flex flex-row items-center justify-center mt-16 gap-16">
+
+        <video autoPlay width={500} height={500} ref={localVideoRef} className="rounded-3xl" />
         {lobby ? "Waiting to connect you to someone" : null}
-        <video autoPlay width={400} height={400} ref={remoteVideoRef} />
+        <video autoPlay width={500} height={500} ref={remoteVideoRef} className="rounded-3xl" />
+        </div>
     </div>
 }
 
