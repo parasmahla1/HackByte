@@ -12,7 +12,6 @@ const Contact = () => {
                     <p className="my-4">Always learning</p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center ">
-                    <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
                     <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                         <div>Joydeep Tripathy</div>
                         <div className="text-sm text-gray-500 dark:text-gray-400 ">AI/ML Developer</div>
@@ -25,7 +24,6 @@ const Contact = () => {
                     <p className="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver</p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center ">
-                    <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture" />
                     <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                         <div>Ravjot Singh</div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</div>
@@ -38,7 +36,6 @@ const Contact = () => {
                     <p className="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application.</p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center ">
-                    <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture" />
                     <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                         <div>Astik Sharma</div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</div>
@@ -51,7 +48,6 @@ const Contact = () => {
                     <p className="my-4">You have many examples that can be used to create a fast prototype for your team.</p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center ">
-                    <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture" />
                     <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                         <div>Paras Mahla</div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</div>
