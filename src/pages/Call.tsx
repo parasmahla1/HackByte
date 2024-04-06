@@ -39,27 +39,27 @@ const Call = () => {
     return (
       <>
         <Header />
-        <div className="windows flex flex-row">
+        <div className="windows flex flex-row justify-center items-center gap-16 mt-16">
           {/* <>
                         <div className="flex justify-between mx-auto max-w-screen-md">
                             <div className="w-1/2 px-4 flex items-center justify-center mt-20 border border-black-400 h-60vh mr-2">First Div</div>
                             <div className="w-1/2 px-4 flex items-center justify-center mt-20 border border-black-400 h-60vh ml-2">Second Div</div>
                         </div>
                     </> */}
-          <section className="">
-            <video height={500} width={500}autoPlay ref={videoRef}></video>
-          </section>
-          {/* <button
+          
+            <video height={500} width={500} autoPlay ref={videoRef} className=" rounded-3xl"></video>
+          
+         
+        <div>
+        <button className="font-bold py-2 px-4 rounded bg-blue-500 text-white mt-4 "
             onClick={() => {
-              setJoined(true);
+                setJoined(true);
             }}
-          >
+            >
             Join
-          </button> */}
-          <Button color="blue">
-            Join
-          </Button>
+          </button>
         </div>
+    </div>
       </>
     );
   }
