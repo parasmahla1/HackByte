@@ -216,6 +216,7 @@ export const Room = ({
           ref={localVideoRef}
           className="rounded-3xl"
         />
+        
         {lobby ? "Waiting to connect you to someone" : null}
         <video
           autoPlay
