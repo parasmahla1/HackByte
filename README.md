@@ -35,10 +35,16 @@ To get started with Anonimo, follow these steps:
    ```
 
 
-4. Run the frontend and backend servers:
+4. Run the backend servers:
 
    ```
-   npm start
+   cd backend
+   npm run dev
+   ```
+
+5. Run the Frontend:
+   ```
+   npm run dev
    ```
 
 5. Access Anonimo in your web browser at `http://localhost:5173`.
